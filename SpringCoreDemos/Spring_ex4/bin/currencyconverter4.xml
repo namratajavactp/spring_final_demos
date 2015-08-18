@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="exchangeService" class="training.spring.ExchangeServiceImpl4"/>
+
+	<bean id="currencyConverter" class="training.spring.CurrencyConverterImpl4">
+		<property name="exchangeService">
+		     <ref bean="exchangeService" />
+		</property>
+		
+		<property name="exchangeService"><idref local="exchangeService" /></property>
+		<!--<property name="exchangeService"><ref local="exchangeService" /></property>-->
+		
+	</bean>
+
+</beans>

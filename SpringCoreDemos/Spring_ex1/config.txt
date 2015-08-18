@@ -1,0 +1,12 @@
+Resource res = new FileSystemResource("beans.xml");
+XmlBeanFactory factory = new XmlBeanFactory(res);
+or
+
+ClassPathResource res = new ClassPathResource("beans.xml");
+XmlBeanFactory factory = new XmlBeanFactory(res);
+or
+
+ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(
+        new String[] {"applicationContext.xml", "applicationContext-part2.xml"});
+// of course, an ApplicationContext is just a BeanFactory
+BeanFactory factory = (BeanFactory) appContext;

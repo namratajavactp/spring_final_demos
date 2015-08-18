@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+
+<bean id="bday" class="constructordi.constructorarg.BirthDate">
+ <constructor-arg index="0" value="27" />
+  <constructor-arg index="2" value="2014" /> 
+   <constructor-arg index="1" value="11" /> 
+</bean>
+
+<bean id="emloyee" class="constructordi.constructorarg.Employee" autowire="constructor">
+ <constructor-arg  value="amit" />
+ <constructor-arg  value="deshpande" /> 
+</bean>
+
+
+<!-- 
+<bean id="emloyee" class="constructordi.constructorarg.Employee" autowire="autodetect">
+ <constructor-arg  value="amit" />
+ <constructor-arg  value="deshpande" /> 
+</bean>
+-->
+
+<!-- 
+<bean id="emloyee" class="constructordi.constructorarg.Employee" autowire="byType">
+ <property name="firstname" value="amit" />
+ <property  name="lastname" value="deshpande" /> 
+</bean>
+-->
+
+
+</beans>

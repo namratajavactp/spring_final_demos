@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="lib" path="D:/Jars/Spring3JARS/classes12.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Springjdbc"/>
+	<classpathentry exported="true" kind="lib" path="D:/Software_in_use/Glashfish3latest/glassfish3/glassfish/lib/appserv-rt.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Software_in_use/Glashfish3latest/glassfish3/javadb/lib/derbyclient.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

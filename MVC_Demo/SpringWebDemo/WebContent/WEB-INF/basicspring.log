@@ -1,0 +1,284 @@
+2005-09-15 15:01:36,046 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing servlet 'basicspring'
+2005-09-15 15:01:36,312 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization started
+2005-09-15 15:01:36,531 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/basicspring-servlet.xml]
+2005-09-15 15:01:36,671 ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Error registering bean with name 'userLoginFormController' defined in ServletContext resource [/WEB-INF/basicspring-servlet.xml]: Multiple 'property' definitions for property 'commandName'
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.parsePropertyElement(DefaultXmlBeanDefinitionParser.java:597)
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.parsePropertyElements(DefaultXmlBeanDefinitionParser.java:499)
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.parseBeanDefinitionElement(DefaultXmlBeanDefinitionParser.java:367)
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.parseBeanDefinitionElement(DefaultXmlBeanDefinitionParser.java:335)
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.parseBeanDefinitions(DefaultXmlBeanDefinitionParser.java:266)
+	at org.springframework.beans.factory.xml.DefaultXmlBeanDefinitionParser.registerBeanDefinitions(DefaultXmlBeanDefinitionParser.java:186)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:246)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:163)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:125)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:141)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:126)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:89)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:268)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.refresh(AbstractRefreshableWebApplicationContext.java:134)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:305)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:250)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:219)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:112)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:211)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:687)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:144)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:536)
+2005-09-15 15:02:34,218 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing servlet 'basicspring'
+2005-09-15 15:02:34,453 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization started
+2005-09-15 15:02:34,671 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/basicspring-servlet.xml]
+2005-09-15 15:02:34,968 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Bean factory for application context [WebApplicationContext for namespace 'basicspring-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+2005-09-15 15:02:35,015 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - 10 beans defined in application context [WebApplicationContext for namespace 'basicspring-servlet']
+2005-09-15 15:02:35,062 INFO [org.springframework.core.CollectionFactory] - JDK 1.4+ collections available
+2005-09-15 15:02:35,078 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'messageSource'
+2005-09-15 15:02:35,125 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[messages]]
+2005-09-15 15:02:35,140 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@e7e8eb]
+2005-09-15 15:02:35,156 INFO [org.springframework.ui.context.support.UiApplicationContextUtils] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@13e4a5a]
+2005-09-15 15:02:35,171 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy]
+2005-09-15 15:02:35,171 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'basicspringController'
+2005-09-15 15:02:35,187 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'productController'
+2005-09-15 15:02:35,187 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'prodMan'
+2005-09-15 15:02:35,203 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product1'
+2005-09-15 15:02:35,218 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product2'
+2005-09-15 15:02:35,218 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy}
+2005-09-15 15:02:35,234 ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'productController' defined in ServletContext resource [/WEB-INF/basicspring-servlet.xml]: Can't resolve reference to bean 'prodMan' while setting property 'productManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prodMan' defined in ServletContext resource [/WEB-INF/basicspring-servlet.xml]: Can't resolve reference to bean 'product3' while setting property 'products[2]'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'product3' is defined: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'prodMan' defined in ServletContext resource [/WEB-INF/basicspring-servlet.xml]: Can't resolve reference to bean 'product3' while setting property 'products[2]'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'product3' is defined: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'product3' is defined: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:349)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedBeanDefinition(AbstractBeanFactory.java:671)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:147)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:176)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:105)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:109)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:823)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:345)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:147)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:176)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1012)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:823)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:345)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:147)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:275)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:318)
+	at org.springframework.web.context.support.AbstractRefreshableWebApplicationContext.refresh(AbstractRefreshableWebApplicationContext.java:134)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:305)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:250)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:219)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:112)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:211)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1019)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:687)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:144)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:536)
+2005-09-15 15:02:58,812 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing servlet 'basicspring'
+2005-09-15 15:02:59,062 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization started
+2005-09-15 15:02:59,265 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/basicspring-servlet.xml]
+2005-09-15 15:02:59,562 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Bean factory for application context [WebApplicationContext for namespace 'basicspring-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+2005-09-15 15:02:59,593 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - 10 beans defined in application context [WebApplicationContext for namespace 'basicspring-servlet']
+2005-09-15 15:02:59,625 INFO [org.springframework.core.CollectionFactory] - JDK 1.4+ collections available
+2005-09-15 15:02:59,640 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'messageSource'
+2005-09-15 15:02:59,703 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[messages]]
+2005-09-15 15:02:59,718 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@142c778]
+2005-09-15 15:02:59,750 INFO [org.springframework.ui.context.support.UiApplicationContextUtils] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@135ae7e]
+2005-09-15 15:02:59,750 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy]
+2005-09-15 15:02:59,750 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'basicspringController'
+2005-09-15 15:02:59,765 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'productController'
+2005-09-15 15:02:59,765 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'prodMan'
+2005-09-15 15:02:59,781 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product1'
+2005-09-15 15:02:59,796 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product2'
+2005-09-15 15:02:59,796 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'userValidator'
+2005-09-15 15:02:59,812 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'userLoginFormController'
+2005-09-15 15:02:59,890 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'urlMapping'
+2005-09-15 15:02:59,937 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'viewResolver'
+2005-09-15 15:03:00,000 INFO [org.springframework.web.servlet.DispatcherServlet] - Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for servlet 'basicspring'
+2005-09-15 15:03:00,000 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2005-09-15 15:03:00,000 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6b62d1]
+2005-09-15 15:03:00,015 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@552a2b]
+2005-09-15 15:03:00,031 INFO [org.springframework.web.servlet.DispatcherServlet] - No HandlerAdapters found in servlet 'basicspring': using default
+2005-09-15 15:03:00,031 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization completed in 969 ms
+2005-09-15 15:03:00,031 INFO [org.springframework.web.servlet.DispatcherServlet] - Servlet 'basicspring' configured successfully
+2005-09-15 15:03:14,875 INFO [org.springframework.ui.context.support.ResourceBundleThemeSource] - Theme created: name 'theme', basename [theme]
+2005-09-15 15:03:14,890 INFO [org.springframework.web.util.ExpressionEvaluationUtils] - Using JSP 2.0 ExpressionEvaluator
+2005-09-15 15:03:14,921 ERROR [org.springframework.web.servlet.tags.BindTag] - Neither Errors instance nor plain target object for bean name 'user' available as request attribute
+javax.servlet.jsp.JspTagException: Neither Errors instance nor plain target object for bean name 'user' available as request attribute
+	at org.springframework.web.servlet.tags.BindTag.doStartTagInternal(BindTag.java:118)
+	at org.springframework.web.servlet.tags.RequestContextAwareTag.doStartTag(RequestContextAwareTag.java:68)
+	at org.apache.jsp.login_jsp._jspService(login_jsp.java:77)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:298)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:292)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:236)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:703)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:463)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:398)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:97)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:928)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:705)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:625)
+	at org.springframework.web.servlet.FrameworkServlet.serviceWrapper(FrameworkServlet.java:386)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:536)
+2005-09-15 15:03:14,953 ERROR [org.springframework.web.servlet.DispatcherServlet] - Could not complete request
+javax.servlet.ServletException: Neither Errors instance nor plain target object for bean name 'user' available as request attribute
+	at org.apache.jasper.runtime.PageContextImpl.doHandlePageException(PageContextImpl.java:825)
+	at org.apache.jasper.runtime.PageContextImpl.handlePageException(PageContextImpl.java:758)
+	at org.apache.jsp.login_jsp._jspService(login_jsp.java:158)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:298)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:292)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:236)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:703)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:463)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:398)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:97)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:250)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:928)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:705)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:625)
+	at org.springframework.web.servlet.FrameworkServlet.serviceWrapper(FrameworkServlet.java:386)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:346)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:697)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:810)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:237)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:157)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:214)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardContextValve.invokeInternal(StandardContextValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:152)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:117)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:102)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.core.StandardValveContext.invokeNext(StandardValveContext.java:104)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:520)
+	at org.apache.catalina.core.ContainerBase.invoke(ContainerBase.java:929)
+	at org.apache.coyote.tomcat5.CoyoteAdapter.service(CoyoteAdapter.java:160)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:793)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.processConnection(Http11Protocol.java:702)
+	at org.apache.tomcat.util.net.TcpWorkerThread.runIt(PoolTcpEndpoint.java:571)
+	at org.apache.tomcat.util.threads.ThreadPool$ControlRunnable.run(ThreadPool.java:644)
+	at java.lang.Thread.run(Thread.java:536)
+2005-09-15 15:04:17,296 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Closing application context [WebApplicationContext for namespace 'basicspring-servlet']
+2005-09-15 15:04:17,296 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy}
+2005-09-15 15:04:22,281 INFO [org.springframework.web.servlet.DispatcherServlet] - Initializing servlet 'basicspring'
+2005-09-15 15:04:22,500 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization started
+2005-09-15 15:04:22,734 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/basicspring-servlet.xml]
+2005-09-15 15:04:23,031 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Bean factory for application context [WebApplicationContext for namespace 'basicspring-servlet']: org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy
+2005-09-15 15:04:23,062 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - 10 beans defined in application context [WebApplicationContext for namespace 'basicspring-servlet']
+2005-09-15 15:04:23,093 INFO [org.springframework.core.CollectionFactory] - JDK 1.4+ collections available
+2005-09-15 15:04:23,109 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'messageSource'
+2005-09-15 15:04:23,156 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Using MessageSource [org.springframework.context.support.ResourceBundleMessageSource: basenames=[messages]]
+2005-09-15 15:04:23,171 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@f36e59]
+2005-09-15 15:04:23,187 INFO [org.springframework.ui.context.support.UiApplicationContextUtils] - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@1d1cdf7]
+2005-09-15 15:04:23,203 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy]
+2005-09-15 15:04:23,203 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'basicspringController'
+2005-09-15 15:04:23,203 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'productController'
+2005-09-15 15:04:23,218 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'prodMan'
+2005-09-15 15:04:23,218 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product1'
+2005-09-15 15:04:23,234 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'product2'
+2005-09-15 15:04:23,234 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'userValidator'
+2005-09-15 15:04:23,250 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'userLoginFormController'
+2005-09-15 15:04:23,343 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'urlMapping'
+2005-09-15 15:04:23,375 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean 'viewResolver'
+2005-09-15 15:04:23,421 INFO [org.springframework.web.servlet.DispatcherServlet] - Using context class [org.springframework.web.context.support.XmlWebApplicationContext] for servlet 'basicspring'
+2005-09-15 15:04:23,437 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+2005-09-15 15:04:23,437 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@1b29f80]
+2005-09-15 15:04:23,453 INFO [org.springframework.web.servlet.DispatcherServlet] - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@5b24c]
+2005-09-15 15:04:23,468 INFO [org.springframework.web.servlet.DispatcherServlet] - No HandlerAdapters found in servlet 'basicspring': using default
+2005-09-15 15:04:23,468 INFO [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'basicspring': initialization completed in 968 ms
+2005-09-15 15:04:23,468 INFO [org.springframework.web.servlet.DispatcherServlet] - Servlet 'basicspring' configured successfully
+2005-09-15 15:04:23,640 INFO [org.springframework.ui.context.support.ResourceBundleThemeSource] - Theme created: name 'theme', basename [theme]
+2005-09-15 15:04:23,656 INFO [org.springframework.web.util.ExpressionEvaluationUtils] - Using JSP 2.0 ExpressionEvaluator
+2005-09-15 15:06:00,156 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - Closing application context [WebApplicationContext for namespace 'basicspring-servlet']
+2005-09-15 15:06:00,156 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Destroying singletons in factory {org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [basicspringController,productController,userValidator,userLoginFormController,prodMan,product1,product2,messageSource,urlMapping,viewResolver]; root of BeanFactory hierarchy}

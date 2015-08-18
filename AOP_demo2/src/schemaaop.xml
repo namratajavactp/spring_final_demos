@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/aop 
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<bean id="advice" class="training.spring.schemaAOP.MyAdvice" />
+	<bean id="myBusinessClass" class="training.spring.schemaAOP.BusinessImpl" />
+	
+
+	<aop:config>	
+
+		<aop:aspect ref="advice">
+			<aop:pointcut expression="execution(* training.spring.schemaAOP.BusinessImpl.getName(String))" id="p1"/>	
+			<aop:pointcut expression="execution(* training.spring.schemaAOP.BusinessImpl.doBusiness())" id="p2"/>
+					
+			<!-- <aop:before
+				pointcut-ref="p1"
+				method="mybeforeMethod" />
+				
+			 <aop:after method="afterMethod" pointcut-ref="p1"/> --> 
+			 <aop:around
+				pointcut-ref="p2"
+				method="aroundMethod" /> 
+			 
+			 <!-- <aop:after-returning 
+				pointcut-ref="p1"
+				method="afterMethodreturnresult" returning="res" /> -->
+			<!-- <aop:after-throwing
+				pointcut="execution(* training.spring.schemaAOP.BusinessImpl.testBusinessException(String))"
+				method="afterException" throwing="err" />  -->
+		</aop:aspect >
+		<aop:aspect>
+		
+		</aop:aspect>
+	</aop:config>
+</beans>

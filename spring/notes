@@ -1,0 +1,6 @@
+Java components / classes should be as independent as possible of other Java
+classes. This increases the possibility to reuse these classes and to test
+them independently of other classes(Unit Testing). To decouple Java components
+from other Java components the dependency to a certain other class should get
+injected into them rather that the class itself creates / finds this object.
+    

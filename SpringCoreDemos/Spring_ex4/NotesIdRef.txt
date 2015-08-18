@@ -1,0 +1,36 @@
+3.3.3.1.1. The idref element
+
+The idref element is simply an error-proof way to pass the id of another 
+bean in the container (to a <constructor-arg/> or <property/> element).
+<bean id="theTargetBean" class="..."/>
+
+<bean id="theClientBean" class="...">
+    <property name="targetName">
+        <idref bean="theTargetBean" />
+    </property>
+</bean>
+The above bean definition snippet is exactly equivalent (at runtime) to the following snippet:
+<bean id="theTargetBean" class="..."/>
+
+<bean id="client" class="...">
+    <property name="targetName">
+        <value>theTargetBean</value>
+    </property>
+</bean>
+The main reason the first form is preferable to the second is that using the
+ idref tag allows the container to validate at deployment time that the referenced
+ , named bean actually exists. In the second variation, no validation is performed
+  on the value that is passed to the 'targetName' property of the 'client' bean. 
+  Any typo will only be discovered (with most likely fatal results) when the 
+  'client' bean is actually instantiated. If the 'client' bean is a prototype
+   bean, this typo (and the resulting exception) may only be discovered long 
+   after the container is actually deployed.
+Additionally, if the bean being referred to is in the same XML unit, and the 
+bean name is the bean id, the 'local' attribute may be used, which allows 
+the XML parser itself to validate the bean id even earlier, at XML document
+ parse time.
+<property name="targetName">
+   <!-- a bean with an id of 'theTargetBean' must exist,
+                otherwise an XML exception will be thrown -->
+   <idref local="theTargetBean"/>
+</property>
